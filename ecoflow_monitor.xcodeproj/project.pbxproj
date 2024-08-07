@@ -7,18 +7,127 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51FB0EE6D1319697E9CD0D2A /* Pods_ecoflow_monitor_API_ecoflow_monitor_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BEB565EB9B76AA46C59BE3 /* Pods_ecoflow_monitor_API_ecoflow_monitor_Domain.framework */; };
+		B6F9BEAE9B70A11F39EBF33B /* Pods_ecoflow_monitor_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D70DF237341E16469B2A994 /* Pods_ecoflow_monitor_API.framework */; };
+		E385D98431F805D2AD4E0B73 /* Pods_ecoflow_monitor_API_ecoflow_monitor_Domain_ecoflow_monitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5157DF6DB4FCBE5338BE699 /* Pods_ecoflow_monitor_API_ecoflow_monitor_Domain_ecoflow_monitor.framework */; };
 		E81EB5992C4EEC8700314510 /* ecoflow_monitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB5982C4EEC8700314510 /* ecoflow_monitorApp.swift */; };
-		E81EB59B2C4EEC8700314510 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB59A2C4EEC8700314510 /* ContentView.swift */; };
+		E81EB59B2C4EEC8700314510 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB59A2C4EEC8700314510 /* LoginView.swift */; };
 		E81EB59D2C4EEC8900314510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81EB59C2C4EEC8900314510 /* Assets.xcassets */; };
 		E81EB5A02C4EEC8900314510 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81EB59F2C4EEC8900314510 /* Preview Assets.xcassets */; };
+		E81EB5BF2C5027EC00314510 /* EcoflowAuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB5BE2C5027EC00314510 /* EcoflowAuthData.swift */; };
+		E81EB5C12C50280E00314510 /* EcoflowMQTTAuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB5C02C50280E00314510 /* EcoflowMQTTAuthData.swift */; };
+		E81EB5C72C5032F300314510 /* EcoflowAuthDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB5C62C5032F300314510 /* EcoflowAuthDAO.swift */; };
+		E81EB5D52C50361800314510 /* EcoflowAuthAPIDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB5D42C50361800314510 /* EcoflowAuthAPIDAO.swift */; };
+		E81EB5E42C503DDF00314510 /* libecoflow_monitor.Data.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E81EB5B52C50277F00314510 /* libecoflow_monitor.Data.a */; };
+		E81EB5FE2C54E94100314510 /* EcoflowAuthContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB5FD2C54E94100314510 /* EcoflowAuthContext.swift */; };
+		E81EB6032C54E97200314510 /* libecoflow_monitor.API.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E81EB5CC2C5035E800314510 /* libecoflow_monitor.API.a */; };
+		E81EB6042C54E97200314510 /* libecoflow_monitor.Data.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E81EB5B52C50277F00314510 /* libecoflow_monitor.Data.a */; };
+		E81EB6062C54EB5A00314510 /* EcoflowMQTTConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB6052C54EB5A00314510 /* EcoflowMQTTConnector.swift */; };
+		E81EB6072C56D67700314510 /* libecoflow_monitor.Domain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E81EB5F62C54E87200314510 /* libecoflow_monitor.Domain.a */; };
+		E81EB60B2C582A6300314510 /* EcoflowDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB60A2C582A6300314510 /* EcoflowDataResponse.swift */; };
+		E81EB60D2C582ED800314510 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB60C2C582ED800314510 /* LoginViewModel.swift */; };
+		E81EB6112C58340E00314510 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB6102C58340E00314510 /* MainView.swift */; };
+		E81EB6132C58344F00314510 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB6122C58344F00314510 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E81EB5D92C50364700314510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E81EB58D2C4EEC8700314510 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E81EB5B42C50277F00314510;
+			remoteInfo = ecoflow_monitor.Data;
+		};
+		E81EB5E52C503DDF00314510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E81EB58D2C4EEC8700314510 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E81EB5B42C50277F00314510;
+			remoteInfo = ecoflow_monitor.Data;
+		};
+		E81EB5FF2C54E96A00314510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E81EB58D2C4EEC8700314510 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E81EB5CB2C5035E800314510;
+			remoteInfo = ecoflow_monitor.API;
+		};
+		E81EB6012C54E96A00314510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E81EB58D2C4EEC8700314510 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E81EB5B42C50277F00314510;
+			remoteInfo = ecoflow_monitor.Data;
+		};
+		E81EB6082C56D67700314510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E81EB58D2C4EEC8700314510 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E81EB5F52C54E87200314510;
+			remoteInfo = ecoflow_monitor.Domain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E81EB5B32C50277F00314510 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81EB5CA2C5035E800314510 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81EB5F42C54E87200314510 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0249C3173B9FE532CB1AA955 /* Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor.release.xcconfig"; path = "Target Support Files/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor.release.xcconfig"; sourceTree = "<group>"; };
+		18313E19632D372B938456F9 /* Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor.debug.xcconfig"; path = "Target Support Files/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor.debug.xcconfig"; sourceTree = "<group>"; };
+		3D70DF237341E16469B2A994 /* Pods_ecoflow_monitor_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecoflow_monitor_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46BEB565EB9B76AA46C59BE3 /* Pods_ecoflow_monitor_API_ecoflow_monitor_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecoflow_monitor_API_ecoflow_monitor_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C0BC0E2FADED3155BFEA46C /* Pods-ecoflow_monitor.API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecoflow_monitor.API.release.xcconfig"; path = "Target Support Files/Pods-ecoflow_monitor.API/Pods-ecoflow_monitor.API.release.xcconfig"; sourceTree = "<group>"; };
+		9D677694F6A3E2ADDC87357B /* Pods-ecoflow_monitor.API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecoflow_monitor.API.debug.xcconfig"; path = "Target Support Files/Pods-ecoflow_monitor.API/Pods-ecoflow_monitor.API.debug.xcconfig"; sourceTree = "<group>"; };
+		AB09843A0160235F3F58A276 /* Pods-ecoflow_monitor.API-ecoflow_monitor.Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecoflow_monitor.API-ecoflow_monitor.Domain.release.xcconfig"; path = "Target Support Files/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain.release.xcconfig"; sourceTree = "<group>"; };
+		C92694B4D634D548AE85732F /* Pods-ecoflow_monitor.API-ecoflow_monitor.Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecoflow_monitor.API-ecoflow_monitor.Domain.debug.xcconfig"; path = "Target Support Files/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain.debug.xcconfig"; sourceTree = "<group>"; };
+		E46377979D0C8FD3EBC84A9E /* Pods-ecoflow_monitor.API-ecoflow_monitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecoflow_monitor.API-ecoflow_monitor.debug.xcconfig"; path = "Target Support Files/Pods-ecoflow_monitor.API-ecoflow_monitor/Pods-ecoflow_monitor.API-ecoflow_monitor.debug.xcconfig"; sourceTree = "<group>"; };
 		E81EB5952C4EEC8700314510 /* ecoflow_monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ecoflow_monitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E81EB5982C4EEC8700314510 /* ecoflow_monitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ecoflow_monitorApp.swift; sourceTree = "<group>"; };
-		E81EB59A2C4EEC8700314510 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E81EB59A2C4EEC8700314510 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E81EB59C2C4EEC8900314510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E81EB59F2C4EEC8900314510 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E81EB5B52C50277F00314510 /* libecoflow_monitor.Data.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libecoflow_monitor.Data.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81EB5BE2C5027EC00314510 /* EcoflowAuthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoflowAuthData.swift; sourceTree = "<group>"; };
+		E81EB5C02C50280E00314510 /* EcoflowMQTTAuthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoflowMQTTAuthData.swift; sourceTree = "<group>"; };
+		E81EB5C62C5032F300314510 /* EcoflowAuthDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoflowAuthDAO.swift; sourceTree = "<group>"; };
+		E81EB5CC2C5035E800314510 /* libecoflow_monitor.API.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libecoflow_monitor.API.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81EB5D42C50361800314510 /* EcoflowAuthAPIDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoflowAuthAPIDAO.swift; sourceTree = "<group>"; };
+		E81EB5F62C54E87200314510 /* libecoflow_monitor.Domain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libecoflow_monitor.Domain.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81EB5FD2C54E94100314510 /* EcoflowAuthContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoflowAuthContext.swift; sourceTree = "<group>"; };
+		E81EB6052C54EB5A00314510 /* EcoflowMQTTConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoflowMQTTConnector.swift; sourceTree = "<group>"; };
+		E81EB60A2C582A6300314510 /* EcoflowDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoflowDataResponse.swift; sourceTree = "<group>"; };
+		E81EB60C2C582ED800314510 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E81EB6102C58340E00314510 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E81EB6122C58344F00314510 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		EB573F8DC5AB18B0E77A6A8A /* Pods-ecoflow_monitor.API-ecoflow_monitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecoflow_monitor.API-ecoflow_monitor.release.xcconfig"; path = "Target Support Files/Pods-ecoflow_monitor.API-ecoflow_monitor/Pods-ecoflow_monitor.API-ecoflow_monitor.release.xcconfig"; sourceTree = "<group>"; };
+		F5157DF6DB4FCBE5338BE699 /* Pods_ecoflow_monitor_API_ecoflow_monitor_Domain_ecoflow_monitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecoflow_monitor_API_ecoflow_monitor_Domain_ecoflow_monitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +135,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81EB5E42C503DDF00314510 /* libecoflow_monitor.Data.a in Frameworks */,
+				E385D98431F805D2AD4E0B73 /* Pods_ecoflow_monitor_API_ecoflow_monitor_Domain_ecoflow_monitor.framework in Frameworks */,
+				E81EB6072C56D67700314510 /* libecoflow_monitor.Domain.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81EB5B22C50277F00314510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81EB5C92C5035E800314510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F9BEAE9B70A11F39EBF33B /* Pods_ecoflow_monitor_API.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81EB5F32C54E87200314510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81EB6032C54E97200314510 /* libecoflow_monitor.API.a in Frameworks */,
+				E81EB6042C54E97200314510 /* libecoflow_monitor.Data.a in Frameworks */,
+				51FB0EE6D1319697E9CD0D2A /* Pods_ecoflow_monitor_API_ecoflow_monitor_Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A50708BB90909D5747C2F06D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D677694F6A3E2ADDC87357B /* Pods-ecoflow_monitor.API.debug.xcconfig */,
+				7C0BC0E2FADED3155BFEA46C /* Pods-ecoflow_monitor.API.release.xcconfig */,
+				E46377979D0C8FD3EBC84A9E /* Pods-ecoflow_monitor.API-ecoflow_monitor.debug.xcconfig */,
+				EB573F8DC5AB18B0E77A6A8A /* Pods-ecoflow_monitor.API-ecoflow_monitor.release.xcconfig */,
+				C92694B4D634D548AE85732F /* Pods-ecoflow_monitor.API-ecoflow_monitor.Domain.debug.xcconfig */,
+				AB09843A0160235F3F58A276 /* Pods-ecoflow_monitor.API-ecoflow_monitor.Domain.release.xcconfig */,
+				18313E19632D372B938456F9 /* Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor.debug.xcconfig */,
+				0249C3173B9FE532CB1AA955 /* Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E81EB58C2C4EEC8700314510 = {
 			isa = PBXGroup;
 			children = (
 				E81EB5972C4EEC8700314510 /* ecoflow_monitor */,
+				E81EB5B62C50277F00314510 /* ecoflow_monitor.Data */,
+				E81EB5CD2C5035E800314510 /* ecoflow_monitor.API */,
+				E81EB5F72C54E87200314510 /* ecoflow_monitor.Domain */,
 				E81EB5962C4EEC8700314510 /* Products */,
+				A50708BB90909D5747C2F06D /* Pods */,
+				EF1CE6E2728041D6431CC2DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,6 +201,9 @@
 			isa = PBXGroup;
 			children = (
 				E81EB5952C4EEC8700314510 /* ecoflow_monitor.app */,
+				E81EB5B52C50277F00314510 /* libecoflow_monitor.Data.a */,
+				E81EB5CC2C5035E800314510 /* libecoflow_monitor.API.a */,
+				E81EB5F62C54E87200314510 /* libecoflow_monitor.Domain.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,9 +212,12 @@
 			isa = PBXGroup;
 			children = (
 				E81EB5982C4EEC8700314510 /* ecoflow_monitorApp.swift */,
-				E81EB59A2C4EEC8700314510 /* ContentView.swift */,
 				E81EB59C2C4EEC8900314510 /* Assets.xcassets */,
 				E81EB59E2C4EEC8900314510 /* Preview Content */,
+				E81EB59A2C4EEC8700314510 /* LoginView.swift */,
+				E81EB60C2C582ED800314510 /* LoginViewModel.swift */,
+				E81EB6102C58340E00314510 /* MainView.swift */,
+				E81EB6122C58344F00314510 /* MainViewModel.swift */,
 			);
 			path = ecoflow_monitor;
 			sourceTree = "<group>";
@@ -67,6 +230,68 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E81EB5B62C50277F00314510 /* ecoflow_monitor.Data */ = {
+			isa = PBXGroup;
+			children = (
+				E81EB5BD2C5027A400314510 /* Entities */,
+				E81EB5BC2C50279C00314510 /* Protocols */,
+			);
+			path = ecoflow_monitor.Data;
+			sourceTree = "<group>";
+		};
+		E81EB5BC2C50279C00314510 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E81EB5C62C5032F300314510 /* EcoflowAuthDAO.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E81EB5BD2C5027A400314510 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E81EB5BE2C5027EC00314510 /* EcoflowAuthData.swift */,
+				E81EB5C02C50280E00314510 /* EcoflowMQTTAuthData.swift */,
+				E81EB60A2C582A6300314510 /* EcoflowDataResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E81EB5CD2C5035E800314510 /* ecoflow_monitor.API */ = {
+			isa = PBXGroup;
+			children = (
+				E81EB5D32C5035FA00314510 /* EcoflowAuth */,
+			);
+			path = ecoflow_monitor.API;
+			sourceTree = "<group>";
+		};
+		E81EB5D32C5035FA00314510 /* EcoflowAuth */ = {
+			isa = PBXGroup;
+			children = (
+				E81EB5D42C50361800314510 /* EcoflowAuthAPIDAO.swift */,
+			);
+			path = EcoflowAuth;
+			sourceTree = "<group>";
+		};
+		E81EB5F72C54E87200314510 /* ecoflow_monitor.Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E81EB5FD2C54E94100314510 /* EcoflowAuthContext.swift */,
+				E81EB6052C54EB5A00314510 /* EcoflowMQTTConnector.swift */,
+			);
+			path = ecoflow_monitor.Domain;
+			sourceTree = "<group>";
+		};
+		EF1CE6E2728041D6431CC2DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D70DF237341E16469B2A994 /* Pods_ecoflow_monitor_API.framework */,
+				46BEB565EB9B76AA46C59BE3 /* Pods_ecoflow_monitor_API_ecoflow_monitor_Domain.framework */,
+				F5157DF6DB4FCBE5338BE699 /* Pods_ecoflow_monitor_API_ecoflow_monitor_Domain_ecoflow_monitor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,18 +299,78 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E81EB5A32C4EEC8900314510 /* Build configuration list for PBXNativeTarget "ecoflow_monitor" */;
 			buildPhases = (
+				EC6A9A8CB113A12ABCA72671 /* [CP] Check Pods Manifest.lock */,
 				E81EB5912C4EEC8700314510 /* Sources */,
 				E81EB5922C4EEC8700314510 /* Frameworks */,
 				E81EB5932C4EEC8700314510 /* Resources */,
+				C5ADF3EA296A3D27348680FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E81EB5E62C503DDF00314510 /* PBXTargetDependency */,
+				E81EB6092C56D67700314510 /* PBXTargetDependency */,
 			);
 			name = ecoflow_monitor;
 			productName = ecoflow_monitor;
 			productReference = E81EB5952C4EEC8700314510 /* ecoflow_monitor.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E81EB5B42C50277F00314510 /* ecoflow_monitor.Data */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E81EB5B92C50277F00314510 /* Build configuration list for PBXNativeTarget "ecoflow_monitor.Data" */;
+			buildPhases = (
+				E81EB5B12C50277F00314510 /* Sources */,
+				E81EB5B22C50277F00314510 /* Frameworks */,
+				E81EB5B32C50277F00314510 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ecoflow_monitor.Data;
+			productName = ecoflow_monitor.Data;
+			productReference = E81EB5B52C50277F00314510 /* libecoflow_monitor.Data.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E81EB5CB2C5035E800314510 /* ecoflow_monitor.API */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E81EB5D02C5035E800314510 /* Build configuration list for PBXNativeTarget "ecoflow_monitor.API" */;
+			buildPhases = (
+				B1BF382F454031C33B3A55CC /* [CP] Check Pods Manifest.lock */,
+				E81EB5C82C5035E800314510 /* Sources */,
+				E81EB5C92C5035E800314510 /* Frameworks */,
+				E81EB5CA2C5035E800314510 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E81EB5DA2C50364700314510 /* PBXTargetDependency */,
+			);
+			name = ecoflow_monitor.API;
+			productName = ecoflow_monitor.API;
+			productReference = E81EB5CC2C5035E800314510 /* libecoflow_monitor.API.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E81EB5F52C54E87200314510 /* ecoflow_monitor.Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E81EB5FA2C54E87200314510 /* Build configuration list for PBXNativeTarget "ecoflow_monitor.Domain" */;
+			buildPhases = (
+				325C9EB1681E102EFC457703 /* [CP] Check Pods Manifest.lock */,
+				E81EB5F22C54E87200314510 /* Sources */,
+				E81EB5F32C54E87200314510 /* Frameworks */,
+				E81EB5F42C54E87200314510 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E81EB6002C54E96A00314510 /* PBXTargetDependency */,
+				E81EB6022C54E96A00314510 /* PBXTargetDependency */,
+			);
+			name = ecoflow_monitor.Domain;
+			productName = ecoflow_monitor.Domain;
+			productReference = E81EB5F62C54E87200314510 /* libecoflow_monitor.Domain.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +384,18 @@
 				TargetAttributes = {
 					E81EB5942C4EEC8700314510 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					E81EB5B42C50277F00314510 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+					E81EB5CB2C5035E800314510 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+					E81EB5F52C54E87200314510 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -116,6 +413,9 @@
 			projectRoot = "";
 			targets = (
 				E81EB5942C4EEC8700314510 /* ecoflow_monitor */,
+				E81EB5B42C50277F00314510 /* ecoflow_monitor.Data */,
+				E81EB5CB2C5035E800314510 /* ecoflow_monitor.API */,
+				E81EB5F52C54E87200314510 /* ecoflow_monitor.Domain */,
 			);
 		};
 /* End PBXProject section */
@@ -132,17 +432,162 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		325C9EB1681E102EFC457703 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1BF382F454031C33B3A55CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ecoflow_monitor.API-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5ADF3EA296A3D27348680FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC6A9A8CB113A12ABCA72671 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E81EB5912C4EEC8700314510 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E81EB59B2C4EEC8700314510 /* ContentView.swift in Sources */,
+				E81EB6132C58344F00314510 /* MainViewModel.swift in Sources */,
+				E81EB59B2C4EEC8700314510 /* LoginView.swift in Sources */,
+				E81EB6112C58340E00314510 /* MainView.swift in Sources */,
 				E81EB5992C4EEC8700314510 /* ecoflow_monitorApp.swift in Sources */,
+				E81EB60D2C582ED800314510 /* LoginViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81EB5B12C50277F00314510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81EB60B2C582A6300314510 /* EcoflowDataResponse.swift in Sources */,
+				E81EB5C72C5032F300314510 /* EcoflowAuthDAO.swift in Sources */,
+				E81EB5C12C50280E00314510 /* EcoflowMQTTAuthData.swift in Sources */,
+				E81EB5BF2C5027EC00314510 /* EcoflowAuthData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81EB5C82C5035E800314510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81EB5D52C50361800314510 /* EcoflowAuthAPIDAO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81EB5F22C54E87200314510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81EB5FE2C54E94100314510 /* EcoflowAuthContext.swift in Sources */,
+				E81EB6062C54EB5A00314510 /* EcoflowMQTTConnector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E81EB5DA2C50364700314510 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E81EB5B42C50277F00314510 /* ecoflow_monitor.Data */;
+			targetProxy = E81EB5D92C50364700314510 /* PBXContainerItemProxy */;
+		};
+		E81EB5E62C503DDF00314510 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E81EB5B42C50277F00314510 /* ecoflow_monitor.Data */;
+			targetProxy = E81EB5E52C503DDF00314510 /* PBXContainerItemProxy */;
+		};
+		E81EB6002C54E96A00314510 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E81EB5CB2C5035E800314510 /* ecoflow_monitor.API */;
+			targetProxy = E81EB5FF2C54E96A00314510 /* PBXContainerItemProxy */;
+		};
+		E81EB6022C54E96A00314510 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E81EB5B42C50277F00314510 /* ecoflow_monitor.Data */;
+			targetProxy = E81EB6012C54E96A00314510 /* PBXContainerItemProxy */;
+		};
+		E81EB6092C56D67700314510 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E81EB5F52C54E87200314510 /* ecoflow_monitor.Domain */;
+			targetProxy = E81EB6082C56D67700314510 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E81EB5A12C4EEC8900314510 /* Debug */ = {
@@ -261,6 +706,7 @@
 		};
 		E81EB5A42C4EEC8900314510 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18313E19632D372B938456F9 /* Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -283,6 +729,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.zindan.ecoflow-monitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -290,6 +737,7 @@
 		};
 		E81EB5A52C4EEC8900314510 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0249C3173B9FE532CB1AA955 /* Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +760,128 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.zindan.ecoflow-monitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E81EB5BA2C50277F00314510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55L5G38UX5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E81EB5BB2C50277F00314510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55L5G38UX5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E81EB5D12C5035E800314510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D677694F6A3E2ADDC87357B /* Pods-ecoflow_monitor.API.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55L5G38UX5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E81EB5D22C5035E800314510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C0BC0E2FADED3155BFEA46C /* Pods-ecoflow_monitor.API.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55L5G38UX5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E81EB5FB2C54E87200314510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92694B4D634D548AE85732F /* Pods-ecoflow_monitor.API-ecoflow_monitor.Domain.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55L5G38UX5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E81EB5FC2C54E87200314510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB09843A0160235F3F58A276 /* Pods-ecoflow_monitor.API-ecoflow_monitor.Domain.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55L5G38UX5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -334,6 +904,33 @@
 			buildConfigurations = (
 				E81EB5A42C4EEC8900314510 /* Debug */,
 				E81EB5A52C4EEC8900314510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E81EB5B92C50277F00314510 /* Build configuration list for PBXNativeTarget "ecoflow_monitor.Data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81EB5BA2C50277F00314510 /* Debug */,
+				E81EB5BB2C50277F00314510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E81EB5D02C5035E800314510 /* Build configuration list for PBXNativeTarget "ecoflow_monitor.API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81EB5D12C5035E800314510 /* Debug */,
+				E81EB5D22C5035E800314510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E81EB5FA2C54E87200314510 /* Build configuration list for PBXNativeTarget "ecoflow_monitor.Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81EB5FB2C54E87200314510 /* Debug */,
+				E81EB5FC2C54E87200314510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

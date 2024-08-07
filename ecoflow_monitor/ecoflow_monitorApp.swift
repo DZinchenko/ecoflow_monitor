@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import ecoflow_monitor_Data
 
 @main
 struct ecoflow_monitorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                LoginView()
+            }
         }
     }
 }

@@ -1,0 +1,6 @@
+framework module Pods_ecoflow_monitor_API_ecoflow_monitor_Domain {
+  umbrella header "Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-umbrella.h"
+
+  export *
+  module * { export * }
+}

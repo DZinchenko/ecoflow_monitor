@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor/Pods-ecoflow_monitor.API-ecoflow_monitor.Domain-ecoflow_monitor-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/CocoaMQTT/CocoaMQTT.framework
+${BUILT_PRODUCTS_DIR}/MqttCocoaAsyncSocket/MqttCocoaAsyncSocket.framework
