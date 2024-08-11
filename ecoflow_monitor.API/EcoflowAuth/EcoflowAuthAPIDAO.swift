@@ -13,7 +13,7 @@ import ecoflow_monitor_Data
 public class EcoflowAuthAPIDAO: EcoflowAuthDAO {
     public init() {}
     
-    public func GetAuthData(email: String, password: String, onSuccess: @escaping (ecoflow_monitor_Data.EcoflowAuthData) -> Void, onError: @escaping () -> Void) {
+    public func GetAuthData(email: String, password: String, onSuccess: @escaping (ecoflow_monitor_Data.EcoflowAuthData) -> Void, onError: @escaping (LoadError) -> Void) {
         let headers: HTTPHeaders = [
             "lang": "en_US",
             "Content-Type": "application/json"
@@ -37,13 +37,16 @@ public class EcoflowAuthAPIDAO: EcoflowAuthDAO {
                         userId: response.data.user.userId,
                         userName: response.data.user.name))
                 }
+                else if result.response?.statusCode == 200 {
+                    onError(.badInput)
+                }
                 else {
-                    onError()
+                    onError(.unexpected)
                 }
             }
     }
     
-    public func GetMQTTAuthData(userId: String, token: String, onSuccess: @escaping (ecoflow_monitor_Data.EcoflowMQTTAuthData) -> Void, onError: @escaping () -> Void) {
+    public func GetMQTTAuthData(userId: String, token: String, onSuccess: @escaping (ecoflow_monitor_Data.EcoflowMQTTAuthData) -> Void, onError: @escaping (LoadError) -> Void) {
         let headers: HTTPHeaders = [
             "lang": "en_US",
             "Content-Type": "application/json",
@@ -58,7 +61,7 @@ public class EcoflowAuthAPIDAO: EcoflowAuthDAO {
             .responseDecodable(of: EcoflowMQTTAuthResponse.self) { result in
                 guard let response = result.value,
                         let port = Int(response.data.port) else {
-                    onError()
+                    onError(.unexpected)
                     return
                 }
                 

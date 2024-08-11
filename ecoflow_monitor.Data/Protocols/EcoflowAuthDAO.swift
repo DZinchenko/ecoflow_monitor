@@ -11,10 +11,10 @@ public protocol EcoflowAuthDAO {
     func GetAuthData(email: String,
                      password: String,
                      onSuccess: @escaping (EcoflowAuthData) -> Void,
-                     onError: @escaping () -> Void)
+                     onError: @escaping (LoadError) -> Void)
     
     func GetMQTTAuthData(userId: String,
                          token: String,
                          onSuccess: @escaping (EcoflowMQTTAuthData) -> Void,
-                         onError: @escaping () -> Void)
+                         onError: @escaping (LoadError) -> Void)
 }

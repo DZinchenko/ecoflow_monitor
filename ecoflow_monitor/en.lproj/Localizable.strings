@@ -1,0 +1,15 @@
+/* 
+  LocalizableEN.strings
+  ecoflow_monitor
+
+  Created by Zinchenko Danulo on 10.08.2024.
+  
+*/
+
+"LoginView.Title" = "Sign in:";
+"LoginView.EmailPlaceholder" = "Email";
+"LoginView.PasswordPlaceholder" = "Password";
+"LoginView.SingInButtonText" = "Sign in";
+"LoginView.NoAccountWarning" = "Incorrect username or password.";
+"LoginView.NoConnectionAlertTitle" = "Unable to connect to the server, please check your internet connection.";
+"LoginView.NoConnectionAlertButton" = "Ok";

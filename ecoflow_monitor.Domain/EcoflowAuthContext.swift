@@ -20,7 +20,7 @@ public class EcoflowAuthContext {
     public func getMQTTAuthData(email: String,
                          password: String,
                          onSuccess: @escaping () -> Void,
-                         onError: @escaping () -> Void) {
+                         onError: @escaping (LoadError) -> Void) {
         self.authDAO.GetAuthData(
             email: email,
             password: Data(password.utf8).base64EncodedString())
@@ -31,12 +31,12 @@ public class EcoflowAuthContext {
                 token: authData.token) { mqttAuthData in
                     self.mqttAuthData = mqttAuthData
                     onSuccess()
-                } onError: {
-                    onError()
+                } onError: { error in
+                    onError(error)
                 }
 
-        } onError: {
-            onError()
+        } onError: { error in
+            onError(error)
         }
     }
 }

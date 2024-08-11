@@ -17,6 +17,7 @@ class LoginViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var isAuthSuccess = false
     @Published var isAuthError = false
+    @Published var isInternetError = false
     
     private var authContext = EcoflowAuthContext()
     
@@ -27,9 +28,14 @@ class LoginViewModel: ObservableObject {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 self.isLoading = false
             }
-        } onError: {
+        } onError: { error in
             self.isLoading = false
-            self.isAuthError = true
+            switch error {
+            case .badInput:
+                self.isAuthError = true
+            case .unexpected:
+                self.isInternetError = true
+            }
         }
     }
     

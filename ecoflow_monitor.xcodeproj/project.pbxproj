@@ -28,6 +28,10 @@
 		E81EB60D2C582ED800314510 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB60C2C582ED800314510 /* LoginViewModel.swift */; };
 		E81EB6112C58340E00314510 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB6102C58340E00314510 /* MainView.swift */; };
 		E81EB6132C58344F00314510 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB6122C58344F00314510 /* MainViewModel.swift */; };
+		E81EB6192C654AA400314510 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB6182C654AA400314510 /* ColorExtensions.swift */; };
+		E81EB6222C67E12800314510 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E81EB6242C67E12800314510 /* Localizable.strings */; };
+		E81EB6262C67E1A800314510 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB6252C67E1A800314510 /* StringExtensions.swift */; };
+		E81EB6282C67E8A300314510 /* LoadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EB6272C67E8A300314510 /* LoadError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +130,10 @@
 		E81EB60C2C582ED800314510 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E81EB6102C58340E00314510 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E81EB6122C58344F00314510 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		E81EB6182C654AA400314510 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		E81EB6232C67E12800314510 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E81EB6252C67E1A800314510 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		E81EB6272C67E8A300314510 /* LoadError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadError.swift; sourceTree = "<group>"; };
 		EB573F8DC5AB18B0E77A6A8A /* Pods-ecoflow_monitor.API-ecoflow_monitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecoflow_monitor.API-ecoflow_monitor.release.xcconfig"; path = "Target Support Files/Pods-ecoflow_monitor.API-ecoflow_monitor/Pods-ecoflow_monitor.API-ecoflow_monitor.release.xcconfig"; sourceTree = "<group>"; };
 		F5157DF6DB4FCBE5338BE699 /* Pods_ecoflow_monitor_API_ecoflow_monitor_Domain_ecoflow_monitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecoflow_monitor_API_ecoflow_monitor_Domain_ecoflow_monitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -211,13 +219,12 @@
 		E81EB5972C4EEC8700314510 /* ecoflow_monitor */ = {
 			isa = PBXGroup;
 			children = (
+				E81EB6152C654A2500314510 /* Views */,
+				E81EB6142C654A1200314510 /* Extensions */,
 				E81EB5982C4EEC8700314510 /* ecoflow_monitorApp.swift */,
+				E81EB6242C67E12800314510 /* Localizable.strings */,
 				E81EB59C2C4EEC8900314510 /* Assets.xcassets */,
 				E81EB59E2C4EEC8900314510 /* Preview Content */,
-				E81EB59A2C4EEC8700314510 /* LoginView.swift */,
-				E81EB60C2C582ED800314510 /* LoginViewModel.swift */,
-				E81EB6102C58340E00314510 /* MainView.swift */,
-				E81EB6122C58344F00314510 /* MainViewModel.swift */,
 			);
 			path = ecoflow_monitor;
 			sourceTree = "<group>";
@@ -253,6 +260,7 @@
 				E81EB5BE2C5027EC00314510 /* EcoflowAuthData.swift */,
 				E81EB5C02C50280E00314510 /* EcoflowMQTTAuthData.swift */,
 				E81EB60A2C582A6300314510 /* EcoflowDataResponse.swift */,
+				E81EB6272C67E8A300314510 /* LoadError.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -280,6 +288,42 @@
 				E81EB6052C54EB5A00314510 /* EcoflowMQTTConnector.swift */,
 			);
 			path = ecoflow_monitor.Domain;
+			sourceTree = "<group>";
+		};
+		E81EB6142C654A1200314510 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E81EB6182C654AA400314510 /* ColorExtensions.swift */,
+				E81EB6252C67E1A800314510 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E81EB6152C654A2500314510 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E81EB6162C654A4E00314510 /* Login */,
+				E81EB6172C654A5700314510 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E81EB6162C654A4E00314510 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E81EB59A2C4EEC8700314510 /* LoginView.swift */,
+				E81EB60C2C582ED800314510 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E81EB6172C654A5700314510 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E81EB6102C58340E00314510 /* MainView.swift */,
+				E81EB6122C58344F00314510 /* MainViewModel.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		EF1CE6E2728041D6431CC2DF /* Frameworks */ = {
@@ -425,6 +469,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81EB6222C67E12800314510 /* Localizable.strings in Resources */,
 				E81EB5A02C4EEC8900314510 /* Preview Assets.xcassets in Resources */,
 				E81EB59D2C4EEC8900314510 /* Assets.xcassets in Resources */,
 			);
@@ -526,8 +571,10 @@
 				E81EB6132C58344F00314510 /* MainViewModel.swift in Sources */,
 				E81EB59B2C4EEC8700314510 /* LoginView.swift in Sources */,
 				E81EB6112C58340E00314510 /* MainView.swift in Sources */,
+				E81EB6262C67E1A800314510 /* StringExtensions.swift in Sources */,
 				E81EB5992C4EEC8700314510 /* ecoflow_monitorApp.swift in Sources */,
 				E81EB60D2C582ED800314510 /* LoginViewModel.swift in Sources */,
+				E81EB6192C654AA400314510 /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +586,7 @@
 				E81EB5C72C5032F300314510 /* EcoflowAuthDAO.swift in Sources */,
 				E81EB5C12C50280E00314510 /* EcoflowMQTTAuthData.swift in Sources */,
 				E81EB5BF2C5027EC00314510 /* EcoflowAuthData.swift in Sources */,
+				E81EB6282C67E8A300314510 /* LoadError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +636,17 @@
 			targetProxy = E81EB6082C56D67700314510 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E81EB6242C67E12800314510 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E81EB6232C67E12800314510 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E81EB5A12C4EEC8900314510 /* Debug */ = {
