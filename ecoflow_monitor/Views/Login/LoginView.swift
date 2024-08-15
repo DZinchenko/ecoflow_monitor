@@ -12,18 +12,22 @@ struct LoginView: View {
     
     var body: some View {
         VStack(spacing: 24) {
-            if let data = self.viewModel.getAuthData() {
-                NavigationLink("",
-                               destination: MainView(authData: data.authData, mqttAuthData: data.mqttAuthData),
-                               isActive: self.$viewModel.isAuthSuccess)
-            }
+            NavigationLink(
+                "",
+                destination: DeviceListView(),
+                isActive: self.$viewModel.isAuthSuccess)
             
             Text(String(fromKey: "LoginView.Title"))
                 .font(.system(.title, weight: .heavy))
                 .padding(.top, 120)
             
-            InputFieldView(text: self.$viewModel.email, placeholder: String(fromKey: "LoginView.EmailPlaceholder"))
-            InputFieldView(text: self.$viewModel.password, placeholder: String(fromKey: "LoginView.PasswordPlaceholder"), isSecure: true)
+            InputFieldView(text: self.$viewModel.email,
+                           placeholder: String(fromKey: "LoginView.EmailPlaceholder"))
+            .autocapitalization(.none)
+            .keyboardType(.emailAddress)
+            
+            InputFieldView(text: self.$viewModel.password,
+                           placeholder: String(fromKey: "LoginView.PasswordPlaceholder"), isSecure: true)
             
             if self.viewModel.isAuthError {
                 HStack {
@@ -86,7 +90,7 @@ struct LoginView: View {
                     TextField("", text: $text)
                 }
             }
-            .overlay(alignment: .leading, content: {
+            .background(alignment: .leading, content: {
                 Group{
                     if self.text.isEmpty {
                         Text(placeholder)

@@ -9,15 +9,17 @@ import Foundation
 import CocoaMQTT
 import ecoflow_monitor_Data
 
-public class EcoflowMQTTConnector {
+public class EcoflowMQTTConnector : MQTTConnector {
     private var mqttClient: CocoaMQTT5?
-    private var onConnect: () -> Void
-    private var onMsgReceive: (EcoflowDataResponse) -> Void
-    private var onDisconnect: () -> Void
+    private var onConnect: (() -> Void)?
+    private var onMsgReceive: ((EcoflowDataResponse) -> Void)?
+    private var onDisconnect: (() -> Void)?
     
-    public init(onConnect: @escaping () -> Void,
-                onMsgReceive: @escaping (EcoflowDataResponse) -> Void,
-                onDisconnect: @escaping () -> Void) {
+    public init() { }
+    
+    public func setCallbacks(onConnect: @escaping () -> Void,
+                             onMsgReceive: @escaping (EcoflowDataResponse) -> Void,
+                             onDisconnect: @escaping () -> Void) {
         self.onConnect = onConnect
         self.onMsgReceive = onMsgReceive
         self.onDisconnect = onDisconnect
@@ -34,11 +36,11 @@ public class EcoflowMQTTConnector {
         mqtt5.keepAlive = 60
         
         mqtt5.didDisconnect = { mqtt, error in
-            self.onDisconnect()
+            self.onDisconnect?()
         }
         
         mqtt5.didConnectAck = { mqtt, code, ack in
-            self.onConnect()
+            self.onConnect?()
         }
         
         mqtt5.didReceiveMessage = { mqtt, message, id, a in
@@ -71,7 +73,7 @@ public class EcoflowMQTTConnector {
                         
                     }))
                 
-                return self.onMsgReceive(response)
+                self.onMsgReceive?(response)
             }
             
         }
@@ -81,12 +83,12 @@ public class EcoflowMQTTConnector {
     
     public func connect() {
         guard let mqttClient = mqttClient else {
-            self.onDisconnect()
+            self.onDisconnect?()
             return
         }
         
         if !mqttClient.connect() {
-            self.onDisconnect()
+            self.onDisconnect?()
         }
     }
     

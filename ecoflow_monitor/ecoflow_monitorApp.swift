@@ -10,6 +10,10 @@ import ecoflow_monitor_Data
 
 @main
 struct ecoflow_monitorApp: App {
+    init(){
+        ServiceLocator.setIOCBuilder(runtimeContainerBuilder)
+    }
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {

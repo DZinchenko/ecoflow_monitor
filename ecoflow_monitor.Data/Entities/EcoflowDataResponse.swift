@@ -9,7 +9,7 @@ import Foundation
 
 public struct EcoflowDataResponse {
     public var timestamp: Date
-    public var device: String
+    public var deviceSN: String
     public var moduleType: String
     public var params: [String:Parameter]
     
@@ -22,7 +22,7 @@ public struct EcoflowDataResponse {
     
     public init(timestamp: Date, device: String, moduleType: String, params: [String:EcoflowDataResponse.Parameter]) {
         self.timestamp = timestamp
-        self.device = device
+        self.deviceSN = device
         self.moduleType = moduleType
         self.params = params
     }

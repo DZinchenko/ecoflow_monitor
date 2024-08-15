@@ -1,5 +1,5 @@
 //
-//  EcoflowAuthAPIDAO.swift
+//  EcoflowAPIDAO.swift
 //  ecoflow_monitor.API
 //
 //  Created by Zinchenko Danulo on 23.07.2024.
@@ -10,10 +10,13 @@ import Alamofire
 
 import ecoflow_monitor_Data
 
-public class EcoflowAuthAPIDAO: EcoflowAuthDAO {
+public class EcoflowAPIDAO: EcoflowAuthDAO, EcoflowDeviceDAO {
     public init() {}
     
-    public func GetAuthData(email: String, password: String, onSuccess: @escaping (ecoflow_monitor_Data.EcoflowAuthData) -> Void, onError: @escaping (LoadError) -> Void) {
+    public func GetAuthData(email: String,
+                            password: String,
+                            onSuccess: @escaping (EcoflowAuthData) -> Void,
+                            onError: @escaping (LoadError) -> Void) {
         let headers: HTTPHeaders = [
             "lang": "en_US",
             "Content-Type": "application/json"
@@ -46,7 +49,10 @@ public class EcoflowAuthAPIDAO: EcoflowAuthDAO {
             }
     }
     
-    public func GetMQTTAuthData(userId: String, token: String, onSuccess: @escaping (ecoflow_monitor_Data.EcoflowMQTTAuthData) -> Void, onError: @escaping (LoadError) -> Void) {
+    public func GetMQTTAuthData(userId: String,
+                                token: String,
+                                onSuccess: @escaping (EcoflowMQTTAuthData) -> Void,
+                                onError: @escaping (LoadError) -> Void) {
         let headers: HTTPHeaders = [
             "lang": "en_US",
             "Content-Type": "application/json",
@@ -72,6 +78,39 @@ public class EcoflowAuthAPIDAO: EcoflowAuthDAO {
             }
     }
     
+    public func GetUserDevices(token: String,
+                               onSuccess: @escaping ([EcoflowDevice]) -> Void,
+                               onError: @escaping (LoadError) -> Void) {
+        let headers: HTTPHeaders = [
+            "lang": "en_US",
+            "Content-Type": "application/json",
+            "authorization": "Bearer \(token)"
+        ]
+        
+        AF.request("https://api.ecoflow.com/iot-service/user/device",
+                   method: .get,
+                   headers: headers)
+            .responseDecodable(of: EcoflowMQTTGetDevicesResponse.self) { result in
+                guard let response = result.value else {
+                    onError(.unexpected)
+                    return
+                }
+                
+                let res =
+                response.data.bound.map { key, value in
+                    EcoflowDevice(deviceSN: key,
+                                  deviceName: String(value.deviceName.split(separator: "-").first ?? ""))
+                }
+                + response.data.share.map { key, value in
+                    EcoflowDevice(deviceSN: key,
+                                  deviceName: String(value.deviceName.split(separator: "-").first ?? ""),
+                                  isShared: true)
+                }
+                
+                onSuccess(res)
+            }
+    }
+    
     private struct EcoflowAuthResponse: Decodable {
         struct Data: Decodable {
             struct User: Decodable {
@@ -91,6 +130,19 @@ public class EcoflowAuthAPIDAO: EcoflowAuthDAO {
             var certificateAccount: String
             var certificatePassword: String
         }
+        var data: Data
+    }
+    
+    private struct EcoflowMQTTGetDevicesResponse: Decodable {
+        struct DeviceData: Decodable {
+            var deviceName: String
+        }
+        
+        struct Data: Decodable {
+            var bound: [String: DeviceData]
+            var share: [String: DeviceData]
+        }
+        
         var data: Data
     }
     

@@ -5,22 +5,31 @@ PODS:
   - CocoaMQTT/Core (2.1.6):
     - MqttCocoaAsyncSocket (~> 1.0.8)
   - MqttCocoaAsyncSocket (1.0.8)
+  - Swinject (2.9.1)
+  - SwinjectAutoregistration (2.9.1):
+    - Swinject (~> 2.9.1)
 
 DEPENDENCIES:
   - Alamofire
   - CocoaMQTT
+  - Swinject
+  - SwinjectAutoregistration
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - CocoaMQTT
     - MqttCocoaAsyncSocket
+    - Swinject
+    - SwinjectAutoregistration
 
 SPEC CHECKSUMS:
   Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
   CocoaMQTT: 1f206228b29318eabdacad0c2e4e88575922c27a
   MqttCocoaAsyncSocket: 77d3b74f76228dd5a05d1f9526eab101d415b30c
+  Swinject: a827d508c6270da03ec74e558e728917a888fa9b
+  SwinjectAutoregistration: a14d8ed61e88b0044a292958d63318b378375ca6
 
-PODFILE CHECKSUM: 9d92bb2005622cb3ebb1415925a0d9156188cd8e
+PODFILE CHECKSUM: e96cbd3807a55eb0b68dbd0d146eb76128676651
 
 COCOAPODS: 1.15.2

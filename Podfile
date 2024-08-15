@@ -9,6 +9,8 @@ target 'ecoflow_monitor.API' do
     pod 'CocoaMQTT'
     
     target 'ecoflow_monitor' do
+      pod 'Swinject'
+      pod 'SwinjectAutoregistration'
       end
     
     end

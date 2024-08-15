@@ -7,15 +7,16 @@
 
 import Foundation
 import ecoflow_monitor_Data
-import ecoflow_monitor_API
 
 public class EcoflowAuthContext {
     public private(set) var authData: EcoflowAuthData?
     public private(set) var mqttAuthData: EcoflowMQTTAuthData?
     
-    private var authDAO: EcoflowAuthDAO = EcoflowAuthAPIDAO()
+    private var authDAO: EcoflowAuthDAO
     
-    public init() {}
+    public init(authDAO: EcoflowAuthDAO) {
+        self.authDAO = authDAO
+    }
     
     public func getMQTTAuthData(email: String,
                          password: String,

@@ -10,6 +10,8 @@ import ecoflow_monitor_Data
 import ecoflow_monitor_Domain
 
 class LoginViewModel: ObservableObject {
+    @Inject private var authContext: EcoflowAuthContext
+    
     @Published var email = ""
     @Published var password = ""
     @Published var serial = ""
@@ -18,8 +20,6 @@ class LoginViewModel: ObservableObject {
     @Published var isAuthSuccess = false
     @Published var isAuthError = false
     @Published var isInternetError = false
-    
-    private var authContext = EcoflowAuthContext()
     
     func signIn() {
         self.isLoading = true
@@ -36,18 +36,6 @@ class LoginViewModel: ObservableObject {
             case .unexpected:
                 self.isInternetError = true
             }
-        }
-    }
-    
-    func getAuthData() -> (authData: EcoflowAuthData, mqttAuthData: EcoflowMQTTAuthData)? {
-        if self.isAuthSuccess,
-           let authData = self.authContext.authData,
-           let mqttAuthData = self.authContext.mqttAuthData
-        {
-            return (authData: authData, mqttAuthData: mqttAuthData)
-        }
-        else {
-            return nil
         }
     }
 }

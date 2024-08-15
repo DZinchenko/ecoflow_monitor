@@ -13,3 +13,12 @@
 "LoginView.NoAccountWarning" = "Incorrect username or password.";
 "LoginView.NoConnectionAlertTitle" = "Unable to connect to the server, please check your internet connection.";
 "LoginView.NoConnectionAlertButton" = "Ok";
+
+"DeviceListView.Title" = "Devices";
+"DeviceListView.NoDevices" = "Looks like you have no connected devices. Try to add some in official ecoflow application.";
+
+"DeviceListItemView.Loading" = "Loading...";
+"DeviceListItemView.Offline" = "Offline";
+"DeviceListItemView.Charging" = "Charging";
+"DeviceListItemView.Discharging" = "Discharging";
+"DeviceListItemView.Idle" = "Idle";
